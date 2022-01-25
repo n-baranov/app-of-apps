@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: git@github.com:n-baranov/main-app.git
+    repoURL: git@github.com:n-baranov/argo-apps.git
     targetRevision: HEAD
     path: main-app
   destination:
