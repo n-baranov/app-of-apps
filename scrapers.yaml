@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-main-app-app
+  name: argocd-scrapers-app
   namespace: argocd
 spec:
   project: default
@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: git@github.com:n-baranov/argo-apps.git
     targetRevision: HEAD
-    path: main-app
+    path: scraper
   destination:
     server: https://kubernetes.default.svc
     namespace: default
